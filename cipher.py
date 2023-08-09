@@ -41,7 +41,7 @@ for letter in letters:
     else:
         output += letter
 
-print("After encryption, the phrase reads: ", output)
+print("The encrypted sentence is: ", output)
 
 while True:
     nextSentence = input("Please enter another phrase to be encrypted: ")
@@ -57,4 +57,4 @@ while True:
         else:
             nextOutput += nextLetter
 
-    print("After encryption, the phrase reads: ", nextOutput)    
+    print("The encrypted sentence is: ", nextOutput)
