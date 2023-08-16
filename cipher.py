@@ -28,7 +28,7 @@ caesarDict = {
     
             }
 
-sentence = input("Welcome to Caesar's Cipher program. Please enter a message to be encrypted: ")
+sentence = input("Please enter a sentence: ")
 sentence = sentence.lower()
 letters = [*sentence]
 
