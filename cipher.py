@@ -28,8 +28,7 @@ caesarDict = {
     
             }
 
-sentence = input("Welcome to Caesar's Cipher program. Please enter a phrase to be encrypted: ")
-print("You have entered the phrase: ", sentence)
+sentence = input("Welcome to Caesar's Cipher program. Please enter a message to be encrypted: ")
 sentence = sentence.lower()
 letters = [*sentence]
 
@@ -42,19 +41,3 @@ for letter in letters:
         output += letter
 
 print("The encrypted sentence is: ", output)
-
-while True:
-    nextSentence = input("Please enter another phrase to be encrypted: ")
-    print("You have entered the phrase: ", nextSentence)
-    nextSentence = nextSentence.lower()
-    nextLetters = [*nextSentence]
-
-    nextOutput = ''
-    for nextLetter in nextLetters:
-        if nextLetter in caesarDict:
-            next_encrypted_letter = caesarDict[nextLetter]
-            nextOutput += next_encrypted_letter
-        else:
-            nextOutput += nextLetter
-
-    print("The encrypted sentence is: ", nextOutput)
