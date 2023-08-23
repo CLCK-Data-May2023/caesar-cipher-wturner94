@@ -28,7 +28,7 @@ caesarDict = {
     
             }
 
-sentence = input("Please enter a sentence: ")
+sentence = input("Please enter a sentence:")
 sentence = sentence.lower()
 letters = [*sentence]
 
@@ -40,4 +40,4 @@ for letter in letters:
     else:
         output += letter
 
-print("The encrypted sentence is: ", output)
+print("The encrypted sentence is:", output)
